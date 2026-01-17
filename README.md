@@ -8,14 +8,13 @@
 ---
 
 ## 📸 Screenshots
-
-| <img width="1403" height="729" alt="Screenshot 2026-01-17 144723" src="https://github.com/user-attachments/assets/d3405ebf-9d70-4b75-b578-1000f73cec4c" />
 Main Menu | Exploration & Combat |
 | --- | --- |
 |  <img width="100%" height="729" alt="Screenshot 2026-01-17 144723" src="https://github.com/user-attachments/assets/c63ce9f6-1c4d-45d3-98f4-f2e86a9e7749" />
-| <img src="[https://github.com/user-attachments/assets/a553d3e4-50ee-47f2-b0a6-bd2a20c2baca](https://github.com/user-attachments/assets/a553d3e4-50ee-47f2-b0a6-bd2a20c2baca)" width="100%"> |
+<img width="100%" height="743" alt="Screenshot 2026-01-17 144732" src="https://github.com/user-attachments/assets/3a750c5d-c83f-47aa-925b-1878ccd9e9ff" />|
 | **Inventory System** | **Boss Encounter** |
-| <img src="[https://github.com/user-attachments/assets/29439aa4-9874-4f85-a337-b02b1194240e](https://github.com/user-attachments/assets/29439aa4-9874-4f85-a337-b02b1194240e)" width="100%"> | <img src="[https://github.com/user-attachments/assets/0a98984c-51cb-400e-abd9-cd8cb33dbb45](https://github.com/user-attachments/assets/0a98984c-51cb-400e-abd9-cd8cb33dbb45)" width="100%"> |
+| <img width="100%" height="747" alt="Screenshot 2026-01-17 144749" src="https://github.com/user-attachments/assets/723cae37-5013-47a1-bb7e-972dcfedd445" />
+<img width="1429" height="737" alt="Screenshot 2026-01-17 144846" src="https://github.com/user-attachments/assets/9c74fdc7-95d4-4ff3-856b-0aee39ecf071" />|
 
 ---
 
