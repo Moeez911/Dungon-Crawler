@@ -56,3 +56,54 @@ The project is built on **16 Core Classes** divided into 5 logical modules.
 * **`Room`**: A container acting as the "Stage" for GameObjects.
 
 ### 3. Module C: Abstract Bases
+* **`GameObject`**: Base parent for all entities with coordinates (X, Y).
+* **`Entity`**: Inherits `GameObject`. Adds `health` and `damage` (for living things).
+* **`Item`**: Inherits `GameObject`. Adds a pure virtual `use()` function.
+
+### 4. Module D: Characters & AI
+* **`Player`**: Handles keyboard input (`WASD`) and interactions.
+* **`Enemy`**: Basic AI behavior (Spider).
+* **`Boss`**: Larger sprite (`[oo]`), higher stats, and unique behavior.
+
+### 5. Module E: Items & Hazards
+* **`Inventory`**: Stores `Item*` pointers.
+* **`Potion` / `Weapon`**: Restore HP or boost Damage.
+* **`Trap`**: Static object causing damage on collision.
+
+---
+
+## 🧩 OOP Pillars Implementation
+
+| Pillar | Implementation in Project |
+| :--- | :--- |
+| **Encapsulation** | Player health and inventory are `private`. External modification is restricted to specific methods like `takeDamage()` to prevent invalid states. |
+| **Inheritance** | `Enemy` and `Guardian` inherit from `Entity`. This prevents code duplication for common logic like taking damage or movement. |
+| **Polymorphism** | The Room holds a generic array of `GameObject*`. Calling `obj->draw()` automatically executes the correct function for a Spider, Potion, or Trap at runtime. |
+| **Abstraction** | The `Item` class forces all children to implement `use()`. The main engine simply calls `item->use()` without needing to know the complex details of the specific item. |
+
+---
+
+## 💾 Memory Management Strategy
+
+Since `std::string` and STL vectors were prohibited, this project relies on **Manual Memory Management**:
+
+1. **Dynamic Allocation:** All text strings and game objects are allocated on the Heap using `new`.
+2. **Custom Destructors:** Classes like `String` and `Inventory` implement custom destructors to prevent memory leaks by deleting internal arrays.
+3. **Cleanup Chain:** A hierarchical cleanup system ensures that deleting the `Map` deletes the `Rooms`, which in turn delete all `Entities`.
+
+---
+
+## 🕹️ Controls
+
+* `W`, `A`, `S`, `D` : Move Elian
+* `E` : Attack (When near enemy)
+* `P` : Pick Up Item
+* `1` - `5` : Use Inventory Item
+* `Q` : Quit Game
+
+---
+
+### 👨‍💻 Author
+
+**Abdul Moeez Asif**
+*Course: Object-Oriented Programming (CP221)*
