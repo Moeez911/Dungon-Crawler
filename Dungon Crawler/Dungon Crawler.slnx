@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Dungon Crawler/Dungon Crawler.vcxproj" Id="bc947ae5-6644-4d9e-b124-8c496b16e2d4" />
+</Solution>
